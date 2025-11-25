@@ -1,9 +1,7 @@
 {
-  "name": "prontuario-node-test",
+  "name": "hello-cps1",
   "version": "1.0.0",
   "main": "server.js",
-  "type": "commonjs",
-  "license": "MIT",
   "scripts": {
     "start": "node server.js"
   },
