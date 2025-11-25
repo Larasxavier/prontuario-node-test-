@@ -1,12 +1,11 @@
-FROM node:24-slim
+FROM node:24
 
 WORKDIR /app
 
-COPY package.json ./
-COPY server.js ./
+COPY package*.json ./
+RUN npm install --omit=dev
 
-RUN npm install
+COPY . .
 
 EXPOSE 3000
-
 CMD ["npm", "start"]
